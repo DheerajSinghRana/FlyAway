@@ -17,7 +17,7 @@ import com.dheeraj.flyaway.service.UserRegistrationService;
 import javax.servlet.http.Cookie;
 
 /**
- * Servlet implementation class DashboardCookieServlet
+ * Servlet implementation class RegisterUserServlet
  */
 @WebServlet("/registerUser")
 public class RegisterUserServlet extends HttpServlet {

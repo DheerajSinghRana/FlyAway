@@ -9,6 +9,7 @@
 </head>
 <body>
 <h1>Welcome to FlyAway</h1>
+<p> Developer: Dheeraj Singh Rana</p>
 <h2>Choose who you are..</h2>
 <div id="myDIV">
 <a href="userLogin.jsp" >User login </a><br/><a href="userRegistration.jsp" >Registration </a><br/></div>

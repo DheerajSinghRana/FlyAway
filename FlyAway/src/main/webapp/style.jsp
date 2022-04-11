@@ -5,6 +5,11 @@ body {
   background-color: cyan;
 }
 
+p {
+  color: maroon;
+  text-align: center;
+}
+
 h1 {
   color: maroon;
   text-align: center;

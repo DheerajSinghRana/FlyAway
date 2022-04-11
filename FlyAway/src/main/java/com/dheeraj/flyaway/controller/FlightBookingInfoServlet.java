@@ -15,7 +15,7 @@ import com.dheeraj.flyaway.service.SearchFlightService;
 import com.dheeraj.flyaway.service.SerchFlightByIdService;
 
 /**
- * Servlet implementation class DashboardCookieServlet
+ * Servlet implementation class FlightBookingInfoServlet
  */
 @WebServlet("/flightBookingInfo")
 public class FlightBookingInfoServlet extends HttpServlet {

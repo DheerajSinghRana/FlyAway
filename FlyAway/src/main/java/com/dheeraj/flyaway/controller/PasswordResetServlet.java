@@ -15,7 +15,7 @@ import com.dheeraj.flyaway.service.PasswordResetService;
 import com.dheeraj.flyaway.service.SearchFlightService;
 
 /**
- * Servlet implementation class DashboardCookieServlet
+ * Servlet implementation class PasswordResetServlet
  */
 @WebServlet("/passwordReset")
 public class PasswordResetServlet extends HttpServlet {

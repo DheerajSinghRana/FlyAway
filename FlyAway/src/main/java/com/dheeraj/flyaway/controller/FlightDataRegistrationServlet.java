@@ -22,9 +22,9 @@ import com.dheeraj.flyaway.service.UserRegistrationService;
 import javax.servlet.http.Cookie;
 
 /**
- * Servlet implementation class DashboardCookieServlet
+ * Servlet implementation class FlightDataRegistrationServlet
  */
-@WebServlet("/registerSourceCity")
+@WebServlet("/flightDataRegistration")
 public class FlightDataRegistrationServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
     

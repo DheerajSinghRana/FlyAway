@@ -19,15 +19,25 @@ h1 {
   margin-right: auto;
   
 }
+#myLIV {
+  
+  text-align:right;
+  
+}
 </style>
 <meta charset="ISO-8859-1">
 <title>Admin Master Data</title>
 </head>
 <body>
+<% if(session.getAttribute("name") != null) { %>
 <h1>FlyAway</h1>
-<h2><% request.getParameter("result");%></h2>
+<h2>Welcome <% out.write((String)session.getAttribute("name"));%></h2>
+<div id="myLIV">
+<a href="logout.jsp" >LOGOUT </a><br/>
+</div>
+<h2 style="color: red;"><% if(request.getParameter("success") != null && "true".equals(request.getParameter("success"))){out.write("Data Successfully Saved!!!");} %></h2>
 <h2>Enter Master Data</h2>
-<form action="registerSourceCity" method=post>
+<form action="flightDataRegistration" method=post>
 <table class="center">
 <tr><td>Enter Source City</td><td><input type="text" name="source" placeholder="Enter Source" required="required"/></td></tr>
 <tr><td>Enter Destination City</td><td><input type="text" name="destination" placeholder="Enter Destination" required="required"/></td></tr>
@@ -40,6 +50,8 @@ h1 {
 </table>
 </form>
 
-
+<% } else { %>
+<h1>Session Timeout!!!!</h1>
+<% } %>
 </body>
 </html>

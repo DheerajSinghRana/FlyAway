@@ -17,7 +17,7 @@ import com.dheeraj.flyaway.service.UserRegistrationService;
 import javax.servlet.http.Cookie;
 
 /**
- * Servlet implementation class DashboardCookieServlet
+ * Servlet implementation class AdminLoginServlet
  */
 @WebServlet("/adminLogin")
 public class AdminLoginServlet extends HttpServlet {
@@ -47,18 +47,12 @@ public class AdminLoginServlet extends HttpServlet {
 		
 		String result = loginService.getAdminUser(userId, password);
 		
-		if(result.equals("user not found")){
+		if (result.equals("user not found")) {
 			out.println("user not found!!!!");
 		} else {
-		
-		
-			/*
-			 * Cookie cookie = new Cookie("UserName", result); response.addCookie(cookie);
-			 */
-			HttpSession session=request.getSession();  
-	        session.setAttribute("name",result);  
-		 response.sendRedirect("adminDashboard.jsp");   
-		 		//?name="+result);
+			HttpSession session = request.getSession();
+			session.setAttribute("name", result);
+			response.sendRedirect("adminDashboard.jsp");
 		}
 	}
 
