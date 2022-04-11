@@ -29,7 +29,7 @@
 </table>   
 <%}%>
 </form>
-<% } else { %>
+<% } else { response.sendRedirect("userLogin.jsp");%>
 <h1>Session Timeout</h1>
 <% } %>
 </body>
